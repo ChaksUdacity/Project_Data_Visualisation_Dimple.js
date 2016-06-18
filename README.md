@@ -44,15 +44,17 @@ Is there something you don’t understand in the graphic :
 Person (2) Eleaiya Bharati as below:
 
 What do you notice in the visualization?:
- 
+   For this problem , you need to use different charts. May be a bar chart with survival and  few questions to plot
+   
 What questions do you have about the data?: 
-
+I still feel too many parameters and incomplete data set on graph.I feel bar chart not good.
 What relationships do you notice?: 
  
 What do you think is the main takeaway from this visualization?: 
+Needs clarity
 
 Is there something you don’t understand in the graphic:
-
+too many parameters plotted
 
 Person (3) Harish lagu as below:
 
