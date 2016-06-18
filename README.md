@@ -9,9 +9,10 @@ Survivors: Only 38.4% of the passengers survived. The majority of the survivors 
 Survivor by Age : The chances of survival was higher if the age group is lower
 Survivors based on port of Embarkment: Survival were higher for Embarkment at Cherbourg(55%) than Queenstown(38.9%) and Southampton(33.7%)
 Survivors by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
+
 Design - intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so chose Vertical bar charts
 
-once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
+Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
 Person (1) Kristien Ahlgren as below:
