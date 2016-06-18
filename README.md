@@ -15,9 +15,9 @@ once on receiving feedback to the visualization, I understood packing too many p
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
 Person (1) Kristien Ahlgren as below:
-# The main message from the whole thing is, if you were rich and female, you had much better changes...they loaded the money folks to lifeboats first, ladys first..
-# The places where rich folks came fall into that category
-# Visualisation : The chart is not good, how to interpret the age is odd..e.g. Why show combined age..
+ The main message from the whole thing is, if you were rich and female, you had much better changes...they loaded the money folks to lifeboats first, ladys first..
+ The places where rich folks came fall into that category
+ Visualisation : The chart is not good, how to interpret the age is odd..e.g. Why show combined age..
 
 Person (2)
 
