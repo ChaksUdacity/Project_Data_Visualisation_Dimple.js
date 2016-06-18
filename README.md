@@ -15,4 +15,6 @@ Design - explain any design choices you made including changes to the visualizat
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
 
-Resources - list of sources consulted to create visualization : (1) Class notes provided at Udacity website (2) http://dimplejs.org
+Resources - list of sources consulted to create visualization : 
+(1) Class notes provided at Udacity website 
+(2) http://dimplejs.org
