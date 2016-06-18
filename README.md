@@ -78,6 +78,7 @@ What do you notice in the visualization?: :
   Women are laways alert to get out. May be the people sitting close to the door escaped first
 
 
-Resources - list of sources consulted to create visualization : 
+Resources -
+list of sources consulted to create visualization : 
 (1) Class notes provided at Udacity website 
 (2) http://dimplejs.org
