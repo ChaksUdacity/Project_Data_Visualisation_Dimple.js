@@ -14,7 +14,6 @@ Design - intially my design choice was to ensure how many men and women survived
 once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
-
 Person (1) Kristien Ahlgren as below:
 # The main message from the whole thing is, if you were rich and female, you had much better changes...they loaded the money folks to lifeboats first, ladys first..
 # The places where rich folks came fall into that category
