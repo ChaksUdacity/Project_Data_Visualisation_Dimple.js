@@ -4,7 +4,7 @@
 Data: Titanic Data  - Contains demographics and passenger information from 891 of the 2224 passengers and crew on board the Titanic. Dataset Source: Kaggle website
 
 Summary -
-Passengers : Of the 891 passengers on board studied,Majority of the passengers are male (64.8%) and the rest are female(35.2%) passengers.
+Passengers : Of the 891 passengers on board studied, majority of the passengers are male (64.8%) and the rest are female(35.2%) passengers.
 Survivors: Only 38.4% of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
 Survivor by Age : The chances of survival was higher if the age group is lower
 Survivors based on port of Embarkment: Survival were higher for Embarkment at Cherbourg(55%) than Queenstown(38.9%) and Southampton(33.7%)
