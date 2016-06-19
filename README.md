@@ -16,10 +16,13 @@ Survivors based on port of Embarkment: Survival were higher for Embarkment at Ch
 Survivors by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
 
 
+
 Design - 
 Intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so chose Vertical bar charts
 
 Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
+
+
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
 
@@ -78,6 +81,7 @@ Person (4); Varun Narayanan (student) as below:
 
 What do you notice in the visualization?: :
   Women are laways alert to get out. May be the people sitting close to the door escaped first
+
 
 
 Resources -
