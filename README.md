@@ -5,13 +5,13 @@ Data: Titanic Data  - Contains demographics and passenger information from 891 o
 
 Summary -
 
-Passengers : Of the 891 passengers on board studied, majority of the passengers are male (64.8%) and the rest are female(35.2%) passengers.
+Passengers : Of the 891 passengers on board studied, majority of the passengers 577 are male (64.8%) and the rest  314 are female(35.2%) passengers.
+Passengers by Passenger_Class: 216 of 891 passengers travelled by 1st class; 184 of 891 passenegers travelled by 2nd Class; 491 of 891 travelled by 3rd class
+Passengers by Passenger class and gender:
 
-Survivors: Only 38.4% of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
+Survivors: Only 342 passengers (38.4%) of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
 
-Survivor by Age : The chances of survival was higher if the age group is lower
-
-Survivors based on port of Embarkment: Survival were higher for Embarkment at Cherbourg(55%) than Queenstown(38.9%) and Southampton(33.7%)
+Survivors based on port of Embarkment: Survival were higher for Embarkment at Cherbourg(168) than Queenstown(77) and Southampton(644)
 
 Survivors by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
 
