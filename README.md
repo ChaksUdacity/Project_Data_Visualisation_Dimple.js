@@ -6,15 +6,19 @@ Data: Titanic Data  - Contains demographics and passenger information from 891 o
 Summary -
 
 Passengers : Of the 891 passengers on board studied, majority of the passengers 577 are male (64.8%) and the rest  314 are female(35.2%) passengers.
+
 Passengers by Passenger_Class: 216 of 891 passengers travelled by 1st class; 184 of 891 passenegers travelled by 2nd Class; 491 of 891 travelled by 3rd class
-Passengers by Passenger class and gender:
 
-Survivors: Only 342 passengers (38.4%) of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
+Passengers by Passenger class and gender: 1st class passenger male passengers 122 (56%) of 216 and female passengers 94 (44%) of 216.
+2nd class passengers: male passengers 108 (59%) of 184 and female passengers 76 (41%) of 184. 3rd class passengers: male passengers 347 (73%) of 491 and female passengers 144 (27%) of 491.
 
-Survivors based on port of Embarkment: Survival were higher for Embarkment at Cherbourg(168) than Queenstown(77) and Southampton(644)
 
-Survivors by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
 
+Passengers Survived: Only 342 passengers (38.4%) of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
+
+Passengers Survived by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
+
+Passengers Survived by Passenger class and gender: Survived 1st class passenger  male passengers 45 (33%) of 136 and female passengers 91 (67%) of 136. Survived 2nd class passengers: male passengers 17(20%) of 87 and female passengers 70 (80%) of 87. Survived 3rd class passengers: male passengers 47 (39%) of 119 and female passengers 72 (61%) of 119.
 
 
 Design - 
