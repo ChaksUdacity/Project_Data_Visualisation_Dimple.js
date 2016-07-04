@@ -14,7 +14,7 @@ Passengers by Passenger class and gender: 1st class passenger male passengers 12
 2nd class passengers: male passengers 108 (59%) of 184 and female passengers 76 (41%) of 184. 3rd class passengers: male passengers 347 (73%) of 491 and female passengers 144 (27%) of 491.
 
 
-
+Background:
 Passengers Survived: Only 342 passengers (38.4%) of the passengers survived. The majority of the survivors are female. 74% of the female passengers (233/314) survived while just 18.8% of male passengers survived(109/577)
 
 Passengers Survived by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
