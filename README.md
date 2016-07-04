@@ -29,10 +29,11 @@ Intially my design choice was to ensure how many men and women survived travelli
 
 Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
 
-Based on  feeedback from Udacity, I limited the number of parameters to three for each charting exercise.  I utilised the no of passengers on board Titanic, the class of passengers travelled and their gender to  produce the first chart. The second set of chart illustrates the passengers survived,  the class of passengers travelled and their gender to cmpare with teh first chart.
+Feedback II -
+Based on the feeedback from Udacity, I limited the number of parameters to three for each charting exercise.  I utilised the no of passengers on board Titanic, the class of passengers travelled and their gender to  produce the first chart. The second set of chart illustrates the passengers survived,  the class of passengers travelled and their gender to cmpare with teh first chart.
 
 
-Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
+Feedback I - include all feedback you received from others on your visualization from the first sketch to the final visualization
 
 Person (1) Kristien Ahlgren as below:
 
