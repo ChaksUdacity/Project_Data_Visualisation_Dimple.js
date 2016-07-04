@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0099)http://localhost:8000/new%20Dimple/Dimple/Practice_Code_Files/Titanic_Vertical_Grouped_Bar_V02.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <script src="./Titanic_Passengers_by_Sex_files/d3.v3.min.js"></script>
+  <script src="./Titanic_Passengers_by_Sex_files/dimple.v2.0.0.min.js"></script>
+  
+
+  <style>
+    circle.dimple-series-1 {
+      fill: red;
+    } 
+
+    h2 {
+      text-align: center;
+    }
+
+    #divParent div {
+      float: left;
+      clear: none;
+      }
+  </style>
+
+    <script type="text/javascript">
+      function draw(data) {
+      
+      /*
+        D3.js setup code
+      */
+          "use strict";
+          var margin = 75,
+              width = 1400 - margin,
+              height = 600 - margin;
+
+      /*
+        Adding a title to the chart
+      */
+
+          var chart1 = d3.select('body')
+              .append('h2') 
+              .text("Titanic Passengers by Sex") 
+
+
+    //<div id="divParent">
+        //<div id="myChart1">
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart');
+
+
+      /*
+        Dimple.js Grouped Bar Chart construction code
+      */
+
+          var myChart1 = new dimple.chart(svg, data);
+          var x = myChart1.addPctAxis("y", "Passengers_Onboard_Titanic_Ship"); 
+          myChart1.setBounds(80, 30, 480, 330)
+          myChart1.addCategoryAxis("x", ["Passenger_class", ]);
+          myChart1.addSeries(["Sex"], dimple.plot.bar);
+          myChart1.addLegend(200, 10, 380, 20, "right");
+          myChart1.draw();
+
+
+
+      /*
+        Adding a title to the chart
+      */
+          var chart2 = d3.select('body')
+              .append('h2') 
+              .text("Titanic Survivors by Sex")  
+
+    //<div id="divParent">
+        //<div id="myChart2">
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width + margin)
+              .attr("height", height + margin)
+            .append('g')
+                .attr('class','chart'); 
+      /*
+        Dimple.js 
+         Grouped Bar Chart construction code
+      */
+
+          var myChart2 = new dimple.chart(svg, data);
+          var x = myChart2.addPctAxis("y", "Passengers_Survived"); 
+          myChart2.setBounds(80, 30, 480, 330)
+          myChart2.addCategoryAxis("x", ["Passenger_class", ]);
+          myChart2.addSeries(["Sex"], dimple.plot.bar);
+          myChart2.addLegend(200, 10, 380, 20, "right");
+          myChart2.draw();
+
+        };
+      </script>
+  </head>
+<body>
+  <script type="text/javascript">
+  /*
+    Using D3 (not dimple.js) to load the TSV file
+    and pass the contents of it to the draw function
+    */
+  d3.tsv("Titanic_data.tsv", draw);
+  </script>
+
+
+
+
+
+
+
+<h2>Titanic Passengers by Sex</h2><svg width="1400" height="600"><g class="chart"><g><g class="dimple-gridline" transform="translate(80, 0)"><g class="tick" transform="translate(0,360)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,327)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,294)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,261)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,228)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,195)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,162)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,129)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,95.99999999999999)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,62.99999999999999)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,30)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><path class="domain" d="M0,30H0V360H0"></path></g><g class="dimple-axis" transform="translate(80, 0)" style="font-family: sans-serif; font-size: 10px;"><g class="tick" transform="translate(0,360)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">0%</text></g><g class="tick" transform="translate(0,327)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">10%</text></g><g class="tick" transform="translate(0,294)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">20%</text></g><g class="tick" transform="translate(0,261)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">30%</text></g><g class="tick" transform="translate(0,228)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">40%</text></g><g class="tick" transform="translate(0,195)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">50%</text></g><g class="tick" transform="translate(0,162)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">60%</text></g><g class="tick" transform="translate(0,129)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">70%</text></g><g class="tick" transform="translate(0,95.99999999999999)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">80%</text></g><g class="tick" transform="translate(0,62.99999999999999)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">90%</text></g><g class="tick" transform="translate(0,30)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">100%</text></g><path class="domain" d="M-6,30H0V360H-6" style="fill: none; stroke: black; shape-rendering: crispEdges;"></path></g><text class="dimple-axis dimple-title" x="42.36931818181818" y="195" text-anchor="middle" transform="rotate(270, 35.4375, 195)" style="font-family: sans-serif; font-size: 10px;">Passengers_Onboard_Titanic_Ship</text><g class="dimple-axis" transform="translate(0, 360)" style="font-family: sans-serif; font-size: 10px;"><g class="tick" transform="translate(80,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">1</text></g><g class="tick" transform="translate(240,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">2</text></g><g class="tick" transform="translate(400,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">3</text></g><g class="tick" transform="translate(560,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;"></text></g><path class="domain" d="M80,6V0H560V6" style="fill: none; stroke: black; shape-rendering: crispEdges;"></path></g><text class="dimple-axis dimple-title" x="320" y="392.2599431818182" text-anchor="middle" transform="" style="font-family: sans-serif; font-size: 10px;">Passenger_class</text><rect id="male_1__" class="dimple-series-0 dimple-bar dimple-male dimple-1" x="96" y="175.98044230479914" width="128" height="184.01955769520086" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="male_3__" class="dimple-series-0 dimple-bar dimple-male dimple-3" x="416" y="118.09335652173914" width="128" height="241.90664347826086" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="male_2__" class="dimple-series-0 dimple-bar dimple-male dimple-2" x="256" y="165.43287510968122" width="128" height="194.56712489031878" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="female_2__" class="dimple-series-0 dimple-bar dimple-female dimple-2" x="256" y="30" width="128" height="135.43287510968122" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><rect id="female_3__" class="dimple-series-0 dimple-bar dimple-female dimple-3" x="416" y="30" width="128" height="88.09335652173914" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><rect id="female_1__" class="dimple-series-0 dimple-bar dimple-female dimple-1" x="96" y="30" width="128" height="145.98044230479914" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><g class="dimple-legend dimple-male" opacity="1"><text class="dimple-legend dimple-legend-text dimple-male" x="535" y="16.865530303030305" width="380" height="20" style="font-family: sans-serif; font-size: 10px; shape-rendering: crispEdges;">male</text><rect class="dimple-legend dimple-legend-key dimple-male" height="9" width="15" x="515" y="10" style="fill: rgb(128, 177, 211); stroke: rgb(107, 148, 176); opacity: 0.8; shape-rendering: crispEdges;"></rect></g><g class="dimple-legend dimple-female" opacity="1"><text class="dimple-legend dimple-legend-text dimple-female" x="470" y="16.865530303030305" width="380" height="20" style="font-family: sans-serif; font-size: 10px; shape-rendering: crispEdges;">female</text><rect class="dimple-legend dimple-legend-key dimple-female" height="9" width="15" x="450" y="10" style="fill: rgb(251, 128, 114); stroke: rgb(210, 107, 95); opacity: 0.8; shape-rendering: crispEdges;"></rect></g></g></g></svg><h2>Titanic Survivors by Sex</h2><svg width="1400" height="600"><g class="chart"><g><g class="dimple-gridline" transform="translate(80, 0)"><g class="tick" transform="translate(0,360)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,327)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,294)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,261)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,228)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,195)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,162)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,129)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,95.99999999999999)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,62.99999999999999)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><g class="tick" transform="translate(0,30)" style="opacity: 1;"><line x2="480" y2="0" style="fill: none; stroke: lightgray; opacity: 0.8;"></line><text dy=".32em" x="-3" y="0" style="text-anchor: end;"></text></g><path class="domain" d="M0,30H0V360H0"></path></g><g class="dimple-axis" transform="translate(80, 0)" style="font-family: sans-serif; font-size: 10px;"><g class="tick" transform="translate(0,360)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">0%</text></g><g class="tick" transform="translate(0,327)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">10%</text></g><g class="tick" transform="translate(0,294)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">20%</text></g><g class="tick" transform="translate(0,261)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">30%</text></g><g class="tick" transform="translate(0,228)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">40%</text></g><g class="tick" transform="translate(0,195)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">50%</text></g><g class="tick" transform="translate(0,162)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">60%</text></g><g class="tick" transform="translate(0,129)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">70%</text></g><g class="tick" transform="translate(0,95.99999999999999)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">80%</text></g><g class="tick" transform="translate(0,62.99999999999999)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">90%</text></g><g class="tick" transform="translate(0,30)" style="opacity: 1;"><line x2="-6" y2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".32em" x="-9" y="0" style="text-anchor: end; font-family: sans-serif; font-size: 10px;">100%</text></g><path class="domain" d="M-6,30H0V360H-6" style="fill: none; stroke: black; shape-rendering: crispEdges;"></path></g><text class="dimple-axis dimple-title" x="42.36931818181818" y="195" text-anchor="middle" transform="rotate(270, 35.4375, 195)" style="font-family: sans-serif; font-size: 10px;">Passengers_Survived</text><g class="dimple-axis" transform="translate(0, 360)" style="font-family: sans-serif; font-size: 10px;"><g class="tick" transform="translate(80,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">1</text></g><g class="tick" transform="translate(240,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">2</text></g><g class="tick" transform="translate(400,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;">3</text></g><g class="tick" transform="translate(560,0)" style="opacity: 1;"><line y2="6" x2="0" style="fill: none; stroke: black; shape-rendering: crispEdges;"></line><text dy=".71em" y="9" x="80" transform="" style="text-anchor: middle; font-family: sans-serif; font-size: 10px;"></text></g><path class="domain" d="M80,6V0H560V6" style="fill: none; stroke: black; shape-rendering: crispEdges;"></path></g><text class="dimple-axis dimple-title" x="320" y="392.2599431818182" text-anchor="middle" transform="" style="font-family: sans-serif; font-size: 10px;">Passenger_class</text><rect id="female_1__" class="dimple-series-0 dimple-bar dimple-female dimple-1" x="96" y="139.19117647058826" width="128" height="220.80882352941174" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="female_3__" class="dimple-series-0 dimple-bar dimple-female dimple-3" x="416" y="160.3361344537815" width="128" height="199.6638655462185" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="female_2__" class="dimple-series-0 dimple-bar dimple-female dimple-2" x="256" y="94.48275862068965" width="128" height="265.51724137931035" opacity="0.8" fill="#80B1D3" stroke="#6b94b0"></rect><rect id="male_2__" class="dimple-series-0 dimple-bar dimple-male dimple-2" x="256" y="30" width="128" height="64.48275862068965" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><rect id="male_3__" class="dimple-series-0 dimple-bar dimple-male dimple-3" x="416" y="30" width="128" height="130.33613445378148" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><rect id="male_1__" class="dimple-series-0 dimple-bar dimple-male dimple-1" x="96" y="30" width="128" height="109.1911764705882" opacity="0.8" fill="#FB8072" stroke="#d26b5f"></rect><g class="dimple-legend dimple-female" opacity="1"><text class="dimple-legend dimple-legend-text dimple-female" x="535" y="16.865530303030305" width="380" height="20" style="font-family: sans-serif; font-size: 10px; shape-rendering: crispEdges;">female</text><rect class="dimple-legend dimple-legend-key dimple-female" height="9" width="15" x="515" y="10" style="fill: rgb(128, 177, 211); stroke: rgb(107, 148, 176); opacity: 0.8; shape-rendering: crispEdges;"></rect></g><g class="dimple-legend dimple-male" opacity="1"><text class="dimple-legend dimple-legend-text dimple-male" x="470" y="16.865530303030305" width="380" height="20" style="font-family: sans-serif; font-size: 10px; shape-rendering: crispEdges;">male</text><rect class="dimple-legend dimple-legend-key dimple-male" height="9" width="15" x="450" y="10" style="fill: rgb(251, 128, 114); stroke: rgb(210, 107, 95); opacity: 0.8; shape-rendering: crispEdges;"></rect></g></g></g></svg></body></html>
