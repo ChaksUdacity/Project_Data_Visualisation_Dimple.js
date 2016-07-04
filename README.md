@@ -9,6 +9,7 @@ Passengers : Of the 891 passengers on board studied, majority of the passengers 
 
 Passengers by Passenger_Class: 216 of 891 passengers travelled by 1st class; 184 of 891 passenegers travelled by 2nd Class; 491 of 891 travelled by 3rd class
 
+CHART DATA: PASSENGERS ON BOARD TITANIC FOR 1ST, 2ND AND 3RD CLASS BASED ON  GENDER
 Passengers by Passenger class and gender: 1st class passenger male passengers 122 (56%) of 216 and female passengers 94 (44%) of 216.
 2nd class passengers: male passengers 108 (59%) of 184 and female passengers 76 (41%) of 184. 3rd class passengers: male passengers 347 (73%) of 491 and female passengers 144 (27%) of 491.
 
@@ -18,6 +19,8 @@ Passengers Survived: Only 342 passengers (38.4%) of the passengers survived. The
 
 Passengers Survived by Gender & Pclass: Survival rate was higher for females travelling by first class (P1) at 96.8% than second class(P2) at 92.1% than third class(P3) at 50.0%
 
+
+CHART DATA: SURVIVED PASSENGERS ON BOARD TITANIC FOR 1ST, 2ND AND 3RD CLASS BASED ON GENDER
 Passengers Survived by Passenger class and gender: Survived 1st class passenger  male passengers 45 (33%) of 136 and female passengers 91 (67%) of 136. Survived 2nd class passengers: male passengers 17(20%) of 87 and female passengers 70 (80%) of 87. Survived 3rd class passengers: male passengers 47 (39%) of 119 and female passengers 72 (61%) of 119.
 
 
@@ -26,6 +29,7 @@ Intially my design choice was to ensure how many men and women survived travelli
 
 Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
 
+Based on  feeedback from Udacity, I limited the number of parameters to three for each charting exercise.  I utilised the no of passengers on board Titanic, the class of passengers travelled and their gender to  produce the first chart. The second set of chart illustrates the passengers survived,  the class of passengers travelled and their gender to cmpare with teh first chart.
 
 
 Feedback - include all feedback you received from others on your visualization from the first sketch to the final visualization
