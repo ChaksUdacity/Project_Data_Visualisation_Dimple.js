@@ -4,7 +4,7 @@
   <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
   <script type="text/javascript">
     var svg = dimple.newSvg("#chartContainer", 590, 400);
-    d3.tsv("Titanic_data.tsv", function (data) {
+    d3.tsv("Original_Titanic_data.tsv", function (data) {
       var myChart = new dimple.chart(svg, data);
       myChart.setBounds(80, 30, 480, 330)
       myChart.addPctAxis("x", "Survived");
