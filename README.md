@@ -22,7 +22,7 @@ why did you choose a bar chart - why did you think this makes it "simple"? : Aft
 why is it a stacked bar chart, why relative sizes instead of absolute ones? Stacked bar chart able to compare the population of different class on equal footing to bring out the percentage of gender in each class. Additionally, Percentage is easy to remember and visualise for the mind than absolute numbers, hence I chose percentage.
 
 
-why that specific color coding? (Atttention: please read more about the color choice in the "Design" section!): I used natural cool colors instead of strong colors which would put down the audience. Additionally I chose pink for females - the color with which normally females are associated with and blue color for males.
+why that specific color coding?: I used natural cool colors instead of strong colors which would put down the audience. Additionally I chose pink for females - the color with which normally females are associated with and blue color for males.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
