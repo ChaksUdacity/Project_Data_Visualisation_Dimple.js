@@ -7,10 +7,14 @@ Summary -
 Even though there were less females on board of the Titanic in each class, there were more female survivors of the disaster in each class.
 
 
-Design - 
-Intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so chose Vertical bar charts
+Design Decision explained- 
+Intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so chose Vertical bar charts.
 
 Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
+
+After experimenting a few, I landed on Bar chart. Bar chart is always elegant, simple explains the data more visually. I took the percentage approach on bar chart to demonstrate even though there were less females on board of the Titanic in each class, there were more female survivors of the disaster in each class. Bar chart helped me to convey the message well
+
+FEEDBACKS:
 
 Feedback II -
 Based on the feeedback from Udacity, I limited the number of parameters to three for each charting exercise.  I utilised the no of passengers on board Titanic, the class of passengers travelled and their gender to  produce the first chart. The second set of chart illustrates the passengers survived,  the class of passengers travelled and their gender to cmpare with teh first chart.
