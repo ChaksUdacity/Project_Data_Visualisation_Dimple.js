@@ -76,6 +76,8 @@ What do you notice in the visualization?: :
 
 
 
+
+
 THE PROCESS OF EDA AND INTERESTING FACTS THAT I STUMBED ON:
 
 Passengers : Of the 891 passengers on board studied, majority of the passengers 577 are male (64.8%) and the rest  314 are female(35.2%) passengers.
