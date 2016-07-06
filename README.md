@@ -9,11 +9,20 @@ Even though there were less females on board of the Titanic in each class, there
 
 --------------------------------------------------------------------------------------------------------------------------------------
 Design Decision explained- 
-Intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so chose Vertical bar charts.
+Intially my design choice was to ensure how many men and women survived travelling in different class , Embarkation port and their age group. I wanted to make it simple so changed to Vertical bar charts.
 
-Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcla bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
+what was the logic behind the original design?: The original idea was to pack more data into horizontal charts giving readers more info.Once on receiving feedback to the visualization, I understood packing too many parameters is loosing the message. Hence on feedback, I removed age and converted the vertcal bar plot to horizontal bar plot after a nuber of try with horizontal plot bar based on percentile axix (i.e. myChart.addPctAxis("x", "Survived");
 
-After experimenting a few, I landed on Bar chart. Bar chart is always elegant, simple explains the data more visually. I took the percentage approach on bar chart to demonstrate even though there were less females on board of the Titanic in each class, there were more female survivors of the disaster in each class. Bar chart helped me to convey the message well
+why did you end up choosing gender and class when simplifying? : From the data analysis, it was clear that though less females travelled in each class but after the Titanic ship crash, the survival percentage was more for females in each class. Hence naturally, I wanted to bring this insight in a more visually communicating way.
+
+
+why did you choose a bar chart - why did you think this makes it "simple"? : After experimenting a few, I landed on Bar chart. Bar chart is always elegant and simple since it explains the data more visually.  Audience are also used to viewing bar charts.
+
+
+why is it a stacked bar chart, why relative sizes instead of absolute ones? Stacked bar chart able to compare the population of different class on equal footing to bring out the percentage of gender in each class. Additionally, Percentage is easy to remember and visualise for the mind than absolute numbers, hence I chose percentage.
+
+
+why that specific color coding? (Atttention: please read more about the color choice in the "Design" section!): I used natural cool colors instead of strong colors which would put down the audience. Additionally I chose pink for females - the color with which normally females are associated with and blue color for males.
 
 --------------------------------------------------------------------------------------------------------------------------------------
 
