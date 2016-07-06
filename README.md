@@ -79,7 +79,8 @@ What do you notice in the visualization? :
 Person (4); Varun Narayanan (student) as below:
 
 What do you notice in the visualization?: :
-  Women are laways alert to get out. May be the people sitting close to the door escaped first
+ Women are laways alert to get out. May be the people sitting close to the door escaped first
+ 
 --------------------------------------------------------------------------------------------------------------------------------------
 
 Resources -
