@@ -11,9 +11,52 @@
       fill: red;
     } 
 
+  /*
+    Create divs with ids for each chart
+  */
+
+      #divParent div {
+      float: left;
+      clear: none;
+    }
+
+    #parentDiv {
+      margin: auto;
+      width: 90vw;
+      height: 90vh;
+    }
+    #myChart1 {
+      margin: auto;
+      width: 45%;
+      height: 100%;
+      padding: 10px;
+      float:left;
+    }
+    #myChart2 {
+      margin: auto;
+      width: 45%;
+      height: 100%;
+      padding: 10px;
+      float:right;
+    }
+
     h2 {
       text-align: center;
+      font-size: 20;
+      font-weight: bold;
     }
+
+    h3 {
+      text-align: left;
+      font-size: 16;
+      font-weight: bold;
+    }
+     p {
+      font-size: 20px;
+      font-weight: bold;
+      background-color: white;
+      color: black;
+        }
 
 
   </style>
@@ -25,19 +68,20 @@
         D3.js setup code
       */
           "use strict";
-          var margin = 75,
-              width = 1400 - margin,
-              height = 600 - margin;
+          var margin = 80,
+              width = 1680 - margin,
+              height = 400 - margin;
 
       /*
         Adding a title to the chart
       */
 
-          var chart1 = d3.select('body')
+          var chart1 = d3.select("#myChart1")
               .append('h2') 
               .text("Titanic Passengers by Passenger Class and Gender") 
+
               
-          var svg = d3.select("body")
+          var svg = d3.select("#myChart1")
             .append("svg")
               .attr("width", width + margin)
               .attr("height", height + margin)
@@ -50,23 +94,24 @@
       */
 
           var myChart1 = new dimple.chart(svg, data);
-          var x = myChart1.addPctAxis("y", "Passengers_Onboard_Titanic_Ship"); 
+          var myAxisx = myChart1.addCategoryAxis("x", ["Passenger_Class", ]);
+          var myAxisy = myChart1.addPctAxis("y", "Passengers_Onboard_Titanic_Ship");
+          myAxisx.title = "Passenger Class";
+          myAxisy.title = "Passengers Onboard Titanic Ship";
           myChart1.setBounds(80, 30, 480, 330)
-          myChart1.addCategoryAxis("x", ["Passenger_class", ]);
-          myChart1.addSeries(["Sex"], dimple.plot.bar);
+          var mySeries = myChart1.addSeries(["Sex"], dimple.plot.bar);
+          mySeries.addOrderRule(["male", "female"])
           myChart1.addLegend(200, 10, 380, 20, "right");
           myChart1.draw();
-
-
 
       /*
         Adding a title to the chart
       */
-          var chart2 = d3.select('body')
+          var chart2 = d3.select("#myChart2")
               .append('h2') 
               .text("Titanic Survivors by Passenger Class and Gender")  
               
-          var svg = d3.select("body")
+          var svg = d3.select("#myChart2")
             .append("svg")
               .attr("width", width + margin)
               .attr("height", height + margin)
@@ -78,18 +123,42 @@
       */
 
           var myChart2 = new dimple.chart(svg, data);
-          var x = myChart2.addPctAxis("y", "Passengers_Survived"); 
+          var myAxisx = myChart2.addCategoryAxis("x", ["Passenger_Class", ]);
+          var myAxisy = myChart2.addPctAxis("y", "Passengers_Survived");
+          myAxisx.title = "Passenger Class";
+          myAxisy.title = "Passengers Survived";
           myChart2.setBounds(80, 30, 480, 330)
-          myChart2.addCategoryAxis("x", ["Passenger_class", ]);
-          myChart2.addSeries(["Sex"], dimple.plot.bar);
+          var mySeries = myChart2.addSeries(["Sex"], dimple.plot.bar);
+          mySeries.addOrderRule(["male", "female"])
           myChart2.addLegend(200, 10, 380, 20, "right");
           myChart2.draw();
-
         };
-      </script>
+
+  </script>
   </head>
 <body>
-  <script type="text/javascript">
+    <div id="divParent">
+    <div id="myChart1"></div>
+    <div id="myChart2"></div>
+<!-- commentary div -->
+<div id="commentary">
+  <p1>
+Even though there were less females on board of the Titanic in each class, there were more female survivors of the disaster in each class:
+  </p1>
+  <ol>
+
+    <li>
+     Titanic Passengers Onbaord by Passenger class and gender: 1st class male and female passengers were 122 (56%) and 94 (44%) respectively out of a total of 216 passengers. IInd class male and female passengers were 108 (59%) and  76 (41%) out of total of 184 passengers. IIIrd class male and female passengers were 347 (73%) and 144 (27%) respectively out of a total of 491 passengers.
+    </li>
+
+    <li>
+     Titanic Passengers Survived by Passenger class and gender: Survived 1st class passenger male and female passengers were 45(33%) and 91 (67%) respectively out of a total of 136. Survived IInd class male and female passengers were 17(20%) and 70 (80%) respectively out of a total of 87 passengers. Survived IIIrd class male and female passengers were 47(39%) and 72 (61%) respcetvey out of a total of 119 passengers.
+    </li>
+
+    </ol>
+    </div>
+    </div>
+ <script type="text/javascript">
   /*
     Using D3 (not dimple.js) to load the TSV file
     and pass the contents of it to the draw function
